@@ -1,0 +1,34 @@
+@import url(home.css);
+@import url(game.css);
+@import url(end.css);
+
+:root {
+    --cor-background: #074c77;
+    --cor-clara: #fdf0d5;
+    --cor-highlight: #c1121f;
+    --cor-highlight2: #669bbc;
+    --cor-vermelho-escuro:#780000;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--cor-background);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.default-btn {
+  font-weight: 600;
+  text-transform: uppercase;
+}

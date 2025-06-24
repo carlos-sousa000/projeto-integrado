@@ -1,0 +1,110 @@
+.game-bg {
+  background-color: var(--cor-background);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-clara);
+  margin: 0 auto;
+  justify-content: center;
+  width: 70%;
+  padding: 4rem;
+}
+
+.game-container h2 {
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+.choice-container {
+  display: flex;
+  border: 3px solid var(--cor-highlight2);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 0px var(--cor-highlight2),
+    2px 2px 0px var(--cor-highlight2), 3px 3px 0px var(--cor-highlight2),
+    4px 4px 0px var(--cor-highlight2), 5px 5px 0px var(--cor-highlight2),
+    6px 6px 0px var(--cor-highlight2);
+  transform: translateY(-2px) translateX(-2px);
+}
+
+.choice-container .choice-prefix {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: var(--cor-highlight2);
+  border: 2px solid var(--cor-highlight2);
+}
+
+.choice-container .choice-text {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: rgb(116, 248, 116);
+}
+
+.incorrect {
+  background-color: rgb(248, 116, 116);
+}
+
+/* hud */
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+#progressText {
+  text-align: center;
+  margin-bottom: 0.8rem;
+  position: fixed;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 10rem;
+  height: 3rem;
+  border: 4px solid orangered;
+}
+
+#progressBarFull {
+  height: 100%;
+  background-color: orangered;
+  width: 50%;
+  transition: all 0.3s ease;
+}
+
+/* responsividade */
+
+@media (max-width: 884px) {
+  .game-container {
+    width: 80%;
+    padding: 2rem;
+  }
+}
+@media (max-width: 615px) {
+  .game-container {
+    width: 90%;
+    padding: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .game-container {
+    width: 100%;
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,79 @@
+@import url("style.css");
+
+/*  */
+/* FILTRO */
+/*  */
+.search-wrapper {
+  position: relative;
+}
+
+#filtro {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  width: 300px;
+  font-size: 1rem;
+  transition: width 0.3s;
+}
+
+#filtro:focus {
+  width: 400px;
+  outline: none;
+}
+
+.artigo.hidden {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  order: 2;
+}
+
+/*  */
+/* CONTEUDO */
+/*  */
+main {
+  flex: 1;
+}
+
+.container-artigos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-artigos a {
+  color: black;
+}
+
+.artigo {
+  box-sizing: border-box;
+  border: 1px solid #adadad;
+  border-radius: 6px;
+  background-color: var(--branco-principal-artigo);
+  color: black;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+  order: 1;
+
+  font-size: 1.3rem;
+}
+.artigo:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.artigo img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 4px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
