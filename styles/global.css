@@ -1,0 +1,36 @@
+/*  
+RESETS, VAR E BODY
+*/
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body {
+  font: normal 16px/1.5 "Inter", sans-serif;
+  background: var(--columbia-blue);
+  color: var(--black);
+  margin-bottom: 50px;
+}
+
+body,
+html {
+  height: 100%;
+}
+:root {
+  --cor-principal-artigo: #f5faff;
+  --cor-clara-quote: #f0f4fb;
+  --cor-escura-quote: #222;
+
+  --cor-texto: #efe6dd;
+  --cor-principal: #ffd93b;
+
+  --g12: #0e0e0e;
+
+  --g1: #f7f7f7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

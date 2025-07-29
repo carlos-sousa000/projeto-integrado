@@ -1,0 +1,56 @@
+/* 
+HEADER
+*/
+header {
+  max-width: 100%;
+  padding: 20px 50px;
+  margin: 0 auto;
+  display: flex;
+  background-color: var(--g12);
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.icon-com-texto {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  gap: 6px;
+}
+.logo {
+  height: 60px;
+  width: 60px;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--g1);
+}
+
+.quiz-button {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.pesquisa-icon {
+  height: 28px;
+  width: 28px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+/* ANIMAÇÕES GERAIS */
+.trasicao-animacao {
+  transition: 0.3s;
+}
+.scale-animacao-media:hover {
+  transform: scale(1.1);
+}
+.scale-animacao-pequena:hover {
+  transform: scale(1.05);
+}
